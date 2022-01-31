@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.views import View
+from .models import MenuItem, Category, OrderModel
 
 class Index(View):
 
@@ -14,26 +15,34 @@ class About(View):
 class Order(View):
 
     def get(self, request, *args, **kwargs):
-        starter = MenuItem.objects.filter(category__name__contains='Starter')
-        maincourse = MenuItem.objects.filter(category__name__contains='Main Course')
-        dessert = MenuItem.objects.filter(category__name__contains='Dessert')
+        starters = MenuItem.objects.filter(category__name__contains='Starter')
+        maincourses = MenuItem.objects.filter(category__name__contains='MainCourse')
+        desserts = MenuItem.objects.filter(category__name__contains='Dessert')
         drinks = MenuItem.objects.filter(category__name__contains='Drinks')
 
         context = {
-            'Starter': starter,
-            'Main Course': maincourse,
-            'Dessert': dessert,
-            'Drinks': drinks,
+            'starters': starters,
+            'maincourses': maincourses,
+            'desserts': desserts,
+            'drinks': drinks,
         }
         return render(request, 'customer/order.html', context)
 
     def post(self, request, *args, **kwargs):
+        # Get input fields at the bottom of the order template
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        street = request.POST.get('street')
+        town = request.POST.get('town')
+        county = request.POST.get('county')
+        post_code = request.POST.get('post_code')
 
         order_items = {
             'items': []
         }
 
         items = request.POST.getlist('items[]')
+
         for item in items:
             menu_item = MenuItem.objects.get(pk__contains=int(item))
             item_data = {
@@ -50,8 +59,29 @@ class Order(View):
             price += item['price']
             item_ids.append(item['id'])
         
-        order = OrderModel.objects.create(price=price)
+        order = OrderModel.objects.create(
+            price=price,
+            name=name,
+            email=email,
+            street=street,
+            town=town,
+            county=county,
+            post_code=post_code
+        )
         order.items.add(*item_ids)
+
+        # After everything is done, send confirmation email to user
+        body = ('Thank you for your order!  Your food is being made and will be delivered soon!\n'
+        f'Your total: {price}\n'
+        'Thank you again for your order!')
+
+        send_mail(
+            'Thank You For Your Order!',
+            body,
+            'example@example.com',
+            [email],
+            fail_silently=False
+        )
 
         context = {
             'items': order_items['items'],
