@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.views import View
+from django.core.mail import send_mail
 from .models import MenuItem, Category, OrderModel
 
 class Index(View):
@@ -35,7 +36,7 @@ class Order(View):
         street = request.POST.get('street')
         town = request.POST.get('town')
         county = request.POST.get('county')
-        post_code = request.POST.get('post_code')
+        post_code = request.POST.get('post')
 
         order_items = {
             'items': []
@@ -44,7 +45,7 @@ class Order(View):
         items = request.POST.getlist('items[]')
 
         for item in items:
-            menu_item = MenuItem.objects.get(pk__contains=int(item))
+            menu_item = MenuItem.objects.get(pk=item)
             item_data = {
                 'id': menu_item.pk,
                 'name': menu_item.name,
