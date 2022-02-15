@@ -21,12 +21,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure--km$!2dkj8fn-pb!90v1fxnr_$%*z4%-a-$%^pgl2ud)m6@!ue'
+SECRET_KEY = ops.environ.get('SECRET_KEY', 'django-insecure--km$!2dkj8fn-pb!90v1fxnr_$%*z4%-a-$%^pgl2ud)m6@!ue')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['fooddelivery7.herokuapp.com']
+ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
 
 # Application definition
 
@@ -100,7 +100,7 @@ DATABASES = {
 }
 
 DATABASES = {
-     'default': dj_database_url.parse('postgres://umlgztagdxilfj:de4ca9df820c8a13aeab803e06a5092a8792b0817d312efd3c1f06d1109996bc@ec2-54-171-25-232.eu-west-1.compute.amazonaws.com:5432/da016f6r8hcs9r')
+     'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
 
 # Password validation
