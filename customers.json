@@ -1,0 +1,475 @@
+[{
+    "model": "customer.menuitem",
+    "pk": 1,
+    "fields": {
+        "name": "Home-Made  Vegetable Soup",
+        "description": "Served with Home-Made Brown Bread",
+        "image": "menu_images/irish-vegetable-soup-17.jpg",
+        "price": "5.00",
+        "category": [7]
+    }
+}, {
+    "model": "customer.menuitem",
+    "pk": 2,
+    "fields": {
+        "name": "Buffalo Wings",
+        "description": "BBQ/Hot & Spicy\r\nServed with Blue Cheese Sauce & Celery Sticks",
+        "image": "menu_images/basic-buffalo-hot-wings-recipe-100937-hero-01-611327a035df408fa3771fe8970d8521.jpg",
+        "price": "9.00",
+        "category": [7]
+    }
+}, {
+    "model": "customer.menuitem",
+    "pk": 3,
+    "fields": {
+        "name": "Grilled Chicken Caesar Salad",
+        "description": "Served with Parmesan Cheese",
+        "image": "menu_images/Grilled-Chicken-Caesar-Salad-Photograph.jpg",
+        "price": "9.00",
+        "category": [7]
+    }
+}, {
+    "model": "customer.menuitem",
+    "pk": 4,
+    "fields": {
+        "name": "Fresh Fish and Chips",
+        "description": "Served with Tarter Sauce, Mushy Peas & Chips",
+        "image": "menu_images/514b0c83-6942-480e-b64e-4561f76c79f5-fish-and-chips-resaurants-finalists.jpg",
+        "price": "16.00",
+        "category": [8]
+    }
+}, {
+    "model": "customer.menuitem",
+    "pk": 5,
+    "fields": {
+        "name": "Chicken Supreme",
+        "description": "Served with a Chive & Scallion Mash, Mixed Grilled Vegetables & Creamy Sauce",
+        "image": "menu_images/Creamy-Chicken-and-mushroom-casserole-square-FS.jpg",
+        "price": "17.00",
+        "category": [8]
+    }
+}, {
+    "model": "customer.menuitem",
+    "pk": 6,
+    "fields": {
+        "name": "Pizza",
+        "description": "Margherita -- Tomato base with Mozzarella.\r\nRomana -- Mozzarella, caramelised onion, tomato & mushrooms.\r\nPepperoni -- Mozzarella Cheese & Pepperoni slices.\r\nHawaiian -- Ham, Pineapple slices  &  Mozzarella Cheese.\r\nVeggie -- Peppers, Mushrooms, Cherry Tomatoes &  Red Onion.\r\n\r\nAll Pizza's are 12' inch.",
+        "image": "menu_images/Types-of-Pizza.jpg",
+        "price": "16.00",
+        "category": [8]
+    }
+}, {
+    "model": "customer.menuitem",
+    "pk": 7,
+    "fields": {
+        "name": "Sticky Toffee Pudding",
+        "description": "Served with Vanilla Ice-Cream",
+        "image": "menu_images/download.jpg",
+        "price": "8.00",
+        "category": [9]
+    }
+}, {
+    "model": "customer.menuitem",
+    "pk": 8,
+    "fields": {
+        "name": "Chocolate Brownie",
+        "description": "Served with Chocolate Ice-Cream",
+        "image": "menu_images/7-Copy-2.jpg",
+        "price": "8.00",
+        "category": [9]
+    }
+}, {
+    "model": "customer.menuitem",
+    "pk": 9,
+    "fields": {
+        "name": "Tiramisu",
+        "description": "Selection of Ice-Cream",
+        "image": "menu_images/Tiramisu-d68a628.jpg",
+        "price": "8.00",
+        "category": [9]
+    }
+}, {
+    "model": "customer.menuitem",
+    "pk": 10,
+    "fields": {
+        "name": "Coke/ Coke Zero",
+        "description": "Can or Bottle",
+        "image": "menu_images/Coke-Zero-Sugar-and-Diet-launch-100-rPET-bottle-in-the-US.jpg",
+        "price": "3.00",
+        "category": [10]
+    }
+}, {
+    "model": "customer.menuitem",
+    "pk": 11,
+    "fields": {
+        "name": "Club Orange",
+        "description": "Can or Bottle",
+        "image": "menu_images/DSC08963_1350x1080.jpg",
+        "price": "3.00",
+        "category": [10]
+    }
+}, {
+    "model": "customer.menuitem",
+    "pk": 12,
+    "fields": {
+        "name": "7UP/7UP Free",
+        "description": "Can or Bottle",
+        "image": "menu_images/0ccdaa35470467.56f8eb31b53ad.jpg",
+        "price": "3.00",
+        "category": [10]
+    }
+}, {
+    "model": "customer.category",
+    "pk": 7,
+    "fields": {
+        "name": "Starter"
+    }
+}, {
+    "model": "customer.category",
+    "pk": 8,
+    "fields": {
+        "name": "MainCourse"
+    }
+}, {
+    "model": "customer.category",
+    "pk": 9,
+    "fields": {
+        "name": "Dessert"
+    }
+}, {
+    "model": "customer.category",
+    "pk": 10,
+    "fields": {
+        "name": "Drinks"
+    }
+}, {
+    "model": "customer.ordermodel",
+    "pk": 1,
+    "fields": {
+        "created_on": "2022-01-31T12:18:11.053Z",
+        "price": "0.00",
+        "name": "",
+        "email": "",
+        "street": "",
+        "town": "",
+        "county": "",
+        "post_code": "",
+        "is_shipped": false,
+        "items": []
+    }
+}, {
+    "model": "customer.ordermodel",
+    "pk": 2,
+    "fields": {
+        "created_on": "2022-01-31T12:22:26.621Z",
+        "price": "0.00",
+        "name": "",
+        "email": "",
+        "street": "",
+        "town": "",
+        "county": "",
+        "post_code": "",
+        "is_shipped": false,
+        "items": []
+    }
+}, {
+    "model": "customer.ordermodel",
+    "pk": 3,
+    "fields": {
+        "created_on": "2022-01-31T12:43:16.541Z",
+        "price": "37.00",
+        "name": "",
+        "email": "",
+        "street": "",
+        "town": "",
+        "county": "",
+        "post_code": "",
+        "is_shipped": false,
+        "items": [3, 5, 8, 12]
+    }
+}, {
+    "model": "customer.ordermodel",
+    "pk": 4,
+    "fields": {
+        "created_on": "2022-01-31T13:00:55.649Z",
+        "price": "3.00",
+        "name": "",
+        "email": "",
+        "street": "",
+        "town": "",
+        "county": "",
+        "post_code": "",
+        "is_shipped": false,
+        "items": [10]
+    }
+}, {
+    "model": "customer.ordermodel",
+    "pk": 5,
+    "fields": {
+        "created_on": "2022-02-01T12:34:17.675Z",
+        "price": "33.00",
+        "name": "Ion Simion",
+        "email": "ionsimion279@gmail.com",
+        "street": "Apartment 4 Cherry",
+        "town": "Edenderry",
+        "county": "Offaly",
+        "post_code": null,
+        "is_shipped": false,
+        "items": [1, 5, 7, 11]
+    }
+}, {
+    "model": "customer.ordermodel",
+    "pk": 6,
+    "fields": {
+        "created_on": "2022-02-01T12:35:20.861Z",
+        "price": "32.00",
+        "name": "Ion Simion",
+        "email": "ionsimion279@gmail.com",
+        "street": "Apartment 4 Cherry",
+        "town": "Edenderry",
+        "county": "Offaly",
+        "post_code": null,
+        "is_shipped": false,
+        "items": [1, 6, 8, 12]
+    }
+}, {
+    "model": "customer.ordermodel",
+    "pk": 7,
+    "fields": {
+        "created_on": "2022-02-01T12:35:46.800Z",
+        "price": "41.00",
+        "name": "Ion Simion",
+        "email": "ionsimion279@gmail.com",
+        "street": "Apartment 4 Cherry",
+        "town": "Edenderry",
+        "county": "Offaly",
+        "post_code": null,
+        "is_shipped": false,
+        "items": [1, 2, 6, 8, 12]
+    }
+}, {
+    "model": "customer.ordermodel",
+    "pk": 8,
+    "fields": {
+        "created_on": "2022-02-01T12:47:46.513Z",
+        "price": "49.00",
+        "name": "Ion Simion",
+        "email": "ionsimion279@gmail.com",
+        "street": "Apartment 4 Cherry",
+        "town": "Edenderry",
+        "county": "Offaly",
+        "post_code": null,
+        "is_shipped": false,
+        "items": [1, 5, 6, 8, 12]
+    }
+}, {
+    "model": "customer.ordermodel",
+    "pk": 9,
+    "fields": {
+        "created_on": "2022-02-01T12:55:35.156Z",
+        "price": "42.00",
+        "name": "Ion Simion",
+        "email": "ionsimion279@gmail.com",
+        "street": "Apartment 4 Cherry",
+        "town": "Edenderry",
+        "county": "Offaly",
+        "post_code": "R45 YE18",
+        "is_shipped": false,
+        "items": [1, 2, 5, 8, 11]
+    }
+}, {
+    "model": "customer.ordermodel",
+    "pk": 10,
+    "fields": {
+        "created_on": "2022-02-02T10:45:47.302Z",
+        "price": "32.00",
+        "name": "Ion Simion",
+        "email": "ionsimion279@gmail.com",
+        "street": "Apartment 4 Cherry",
+        "town": "Edenderry",
+        "county": "Offaly",
+        "post_code": "R45 YE18",
+        "is_shipped": false,
+        "items": [1, 6, 9, 10]
+    }
+}, {
+    "model": "customer.ordermodel",
+    "pk": 11,
+    "fields": {
+        "created_on": "2022-02-02T11:16:05.248Z",
+        "price": "30.00",
+        "name": "Ion Simion",
+        "email": "ionsimion279@gmail.com",
+        "street": "Apartment 4 Cherry",
+        "town": "Edenderry",
+        "county": "Offaly",
+        "post_code": "R45 YE18",
+        "is_shipped": false,
+        "items": [1, 5, 9]
+    }
+}, {
+    "model": "customer.ordermodel",
+    "pk": 12,
+    "fields": {
+        "created_on": "2022-02-03T12:15:15.183Z",
+        "price": "16.00",
+        "name": "Ion Simion",
+        "email": "ionsimion279@gmail.com",
+        "street": "Apartment 4 Cherry",
+        "town": "Edenderry",
+        "county": "Offaly",
+        "post_code": "R45 YE18",
+        "is_shipped": false,
+        "items": [1, 7, 12]
+    }
+}, {
+    "model": "customer.ordermodel",
+    "pk": 13,
+    "fields": {
+        "created_on": "2022-02-03T12:16:35.901Z",
+        "price": "8.00",
+        "name": "Ion Simion",
+        "email": "ionsimion279@gmail.com",
+        "street": "Apartment 4 Cherry",
+        "town": "Edenderry",
+        "county": "Offaly",
+        "post_code": "R45 YE18",
+        "is_shipped": false,
+        "items": [1, 12]
+    }
+}, {
+    "model": "customer.ordermodel",
+    "pk": 14,
+    "fields": {
+        "created_on": "2022-02-03T12:17:37.329Z",
+        "price": "8.00",
+        "name": "Ion Simion",
+        "email": "ionsimion279@gmail.com",
+        "street": "Apartment 4 Cherry",
+        "town": "Edenderry",
+        "county": "Offaly",
+        "post_code": "R45 YE18",
+        "is_shipped": false,
+        "items": [1, 12]
+    }
+}, {
+    "model": "customer.ordermodel",
+    "pk": 15,
+    "fields": {
+        "created_on": "2022-02-03T12:18:11.442Z",
+        "price": "8.00",
+        "name": "Ion Simion",
+        "email": "ionsimion279@gmail.com",
+        "street": "Apartment 4 Cherry",
+        "town": "Edenderry",
+        "county": "Offaly",
+        "post_code": "R45 YE18",
+        "is_shipped": false,
+        "items": [1, 12]
+    }
+}, {
+    "model": "customer.ordermodel",
+    "pk": 16,
+    "fields": {
+        "created_on": "2022-02-03T12:22:46.623Z",
+        "price": "5.00",
+        "name": "Ion Simion",
+        "email": "ionsimion279@gmail.com",
+        "street": "Apartment 4 Cherry",
+        "town": "Edenderry",
+        "county": "Offaly",
+        "post_code": "R45 YE18",
+        "is_shipped": false,
+        "items": [1]
+    }
+}, {
+    "model": "customer.ordermodel",
+    "pk": 17,
+    "fields": {
+        "created_on": "2022-02-07T12:08:16.569Z",
+        "price": "34.00",
+        "name": "Ion Simion",
+        "email": "ionsimion279@gmail.com",
+        "street": "Apartment 4 Cherry",
+        "town": "Edenderry",
+        "county": "Offaly",
+        "post_code": "R45 YE18",
+        "is_shipped": true,
+        "items": [1, 2, 3, 4, 5]
+    }
+}, {
+    "model": "customer.ordermodel",
+    "pk": 18,
+    "fields": {
+        "created_on": "2022-02-07T12:40:02.097Z",
+        "price": "12.00",
+        "name": "Ion Simion",
+        "email": "ionsimion279@gmail.com",
+        "street": "Apartment 4 Cherry",
+        "town": "Edenderry",
+        "county": "Offaly",
+        "post_code": "R45 YE18",
+        "is_shipped": true,
+        "items": [6]
+    }
+}, {
+    "model": "customer.ordermodel",
+    "pk": 19,
+    "fields": {
+        "created_on": "2022-02-07T12:40:18.112Z",
+        "price": "30.00",
+        "name": "Ion Simion",
+        "email": "ionsimion279@gmail.com",
+        "street": "Apartment 4 Cherry",
+        "town": "Edenderry",
+        "county": "Offaly",
+        "post_code": "R45 YE18",
+        "is_shipped": true,
+        "items": [7, 9, 12]
+    }
+}, {
+    "model": "customer.ordermodel",
+    "pk": 20,
+    "fields": {
+        "created_on": "2022-02-08T13:27:45.253Z",
+        "price": "8.00",
+        "name": "Ion Simion",
+        "email": "ionsimion279@gmail.com",
+        "street": "Apartment 4 Cherry",
+        "town": "Edenderry",
+        "county": "Offaly",
+        "post_code": "R45 YE18",
+        "is_shipped": true,
+        "items": [1, 11]
+    }
+}, {
+    "model": "customer.ordermodel",
+    "pk": 21,
+    "fields": {
+        "created_on": "2022-02-08T13:28:24.602Z",
+        "price": "37.00",
+        "name": "Ion Simion",
+        "email": "ionsimion279@gmail.com",
+        "street": "Apartment 4 Cherry",
+        "town": "Edenderry",
+        "county": "Offaly",
+        "post_code": "R45 YE18",
+        "is_shipped": true,
+        "items": [2, 5, 9, 10]
+    }
+}, {
+    "model": "customer.ordermodel",
+    "pk": 22,
+    "fields": {
+        "created_on": "2022-02-15T09:29:25.898Z",
+        "price": "32.00",
+        "name": "Ion Simion",
+        "email": "ionsimion279@gmail.com",
+        "street": "Apartment 4 Cherry",
+        "town": "Edenderry",
+        "county": "Offaly",
+        "post_code": "R45 YE18",
+        "is_shipped": true,
+        "items": [1, 6, 9, 10]
+    }
+}]

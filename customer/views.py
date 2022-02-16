@@ -5,17 +5,14 @@ from django.core.mail import send_mail
 from .models import MenuItem, Category, OrderModel
 
 class Index(View):
-
     def get(self, request, *args, **kwargs):
         return render(request, 'customer/index.html')
 
 class About(View):
-
     def get(self, request, *args, **kwargs):
         return render(request, 'customer/about.html')
 
 class Order(View):
-
     def get(self, request, *args, **kwargs):
         starters = MenuItem.objects.filter(category__name__contains='Starter')
         maincourses = MenuItem.objects.filter(category__name__contains='MainCourse')
