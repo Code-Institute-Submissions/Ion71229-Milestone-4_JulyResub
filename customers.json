@@ -4,7 +4,7 @@
     "fields": {
         "name": "Home-Made  Vegetable Soup",
         "description": "Served with Home-Made Brown Bread",
-        "image": "menu_images/irish-vegetable-soup-17.jpg",
+        "image": "menu_images/irish-vegetable-soup-17.JPG",
         "price": "5.00",
         "category": [7]
     }
@@ -14,7 +14,7 @@
     "fields": {
         "name": "Buffalo Wings",
         "description": "BBQ/Hot & Spicy\r\nServed with Blue Cheese Sauce & Celery Sticks",
-        "image": "menu_images/basic-buffalo-hot-wings-recipe-100937-hero-01-611327a035df408fa3771fe8970d8521.jpg",
+        "image": "menu_images/basic-buffalo-hot-wings-recipe-100937-hero-01-611327a035df408fa3771fe8970d8521.JPG",
         "price": "9.00",
         "category": [7]
     }
@@ -24,7 +24,7 @@
     "fields": {
         "name": "Grilled Chicken Caesar Salad",
         "description": "Served with Parmesan Cheese",
-        "image": "menu_images/Grilled-Chicken-Caesar-Salad-Photograph.jpg",
+        "image": "menu_images/Grilled-Chicken-Caesar-Salad-Photograph.JPG",
         "price": "9.00",
         "category": [7]
     }
@@ -34,7 +34,7 @@
     "fields": {
         "name": "Fresh Fish and Chips",
         "description": "Served with Tarter Sauce, Mushy Peas & Chips",
-        "image": "menu_images/514b0c83-6942-480e-b64e-4561f76c79f5-fish-and-chips-resaurants-finalists.jpg",
+        "image": "menu_images/514b0c83-6942-480e-b64e-4561f76c79f5-fish-and-chips-resaurants-finalists.JPG",
         "price": "16.00",
         "category": [8]
     }
@@ -44,7 +44,7 @@
     "fields": {
         "name": "Chicken Supreme",
         "description": "Served with a Chive & Scallion Mash, Mixed Grilled Vegetables & Creamy Sauce",
-        "image": "menu_images/Creamy-Chicken-and-mushroom-casserole-square-FS.jpg",
+        "image": "menu_images/Creamy-Chicken-and-mushroom-casserole-square-FS.JPG",
         "price": "17.00",
         "category": [8]
     }
@@ -54,7 +54,7 @@
     "fields": {
         "name": "Pizza",
         "description": "Margherita -- Tomato base with Mozzarella.\r\nRomana -- Mozzarella, caramelised onion, tomato & mushrooms.\r\nPepperoni -- Mozzarella Cheese & Pepperoni slices.\r\nHawaiian -- Ham, Pineapple slices  &  Mozzarella Cheese.\r\nVeggie -- Peppers, Mushrooms, Cherry Tomatoes &  Red Onion.\r\n\r\nAll Pizza's are 12' inch.",
-        "image": "menu_images/Types-of-Pizza.jpg",
+        "image": "menu_images/Types-of-Pizza.JPG",
         "price": "16.00",
         "category": [8]
     }
@@ -64,7 +64,7 @@
     "fields": {
         "name": "Sticky Toffee Pudding",
         "description": "Served with Vanilla Ice-Cream",
-        "image": "menu_images/download.jpg",
+        "image": "menu_images/download.JPG",
         "price": "8.00",
         "category": [9]
     }
@@ -74,7 +74,7 @@
     "fields": {
         "name": "Chocolate Brownie",
         "description": "Served with Chocolate Ice-Cream",
-        "image": "menu_images/7-Copy-2.jpg",
+        "image": "menu_images/7-Copy-2.JPG",
         "price": "8.00",
         "category": [9]
     }
@@ -84,7 +84,7 @@
     "fields": {
         "name": "Tiramisu",
         "description": "Selection of Ice-Cream",
-        "image": "menu_images/Tiramisu-d68a628.jpg",
+        "image": "menu_images/Tiramisu-d68a628.JPG",
         "price": "8.00",
         "category": [9]
     }
@@ -94,7 +94,7 @@
     "fields": {
         "name": "Coke/ Coke Zero",
         "description": "Can or Bottle",
-        "image": "menu_images/Coke-Zero-Sugar-and-Diet-launch-100-rPET-bottle-in-the-US.jpg",
+        "image": "menu_images/Coke-Zero-Sugar-and-Diet-launch-100-rPET-bottle-in-the-US.JPG",
         "price": "3.00",
         "category": [10]
     }
@@ -104,7 +104,7 @@
     "fields": {
         "name": "Club Orange",
         "description": "Can or Bottle",
-        "image": "menu_images/DSC08963_1350x1080.jpg",
+        "image": "menu_images/DSC08963_1350x1080.JPG",
         "price": "3.00",
         "category": [10]
     }
@@ -114,7 +114,7 @@
     "fields": {
         "name": "7UP/7UP Free",
         "description": "Can or Bottle",
-        "image": "menu_images/0ccdaa35470467.56f8eb31b53ad.jpg",
+        "image": "menu_images/0ccdaa35470467.56f8eb31b53ad.JPG",
         "price": "3.00",
         "category": [10]
     }
