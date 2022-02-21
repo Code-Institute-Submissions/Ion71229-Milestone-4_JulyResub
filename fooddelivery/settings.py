@@ -97,17 +97,20 @@ WSGI_APPLICATION = 'fooddelivery.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-if "DATABASE_URL" in os.environ:
-    DATABASES = {
-       'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-        }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        }
-    }
+# if "DATABASE_URL" in os.environ:
+#     DATABASES = {
+#        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+#         }
+# else:
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.sqlite3',
+#             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#         }
+#     }
+DATABASES = {
+   'default': dj_database_url.parse('postgres://umlgztagdxilfj:de4ca9df820c8a13aeab803e06a5092a8792b0817d312efd3c1f06d1109996bc@ec2-54-171-25-232.eu-west-1.compute.amazonaws.com:5432/da016f6r8hcs9r')
+}
 
 
 # Password validation
@@ -157,5 +160,3 @@ ACCOUNT_ADAPTER = 'restaurant.account_adapter.NoNewUsersAccountAdapter'
 LOGIN_REDIRECT_URL = 'dashboard'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
-
-CSRF_TRUSTED_ORIGINS = ['https://8000-workspace-name-goes-here.gitpod.io']
