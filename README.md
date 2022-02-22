@@ -1,108 +1,93 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Deliver
+![](readme_picture/screenshot.png)
 
-Welcome Ion71229,
+[Live application can be found here](https://fooddelivery7.herokuapp.com/)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+This is a full-stack framework project built using Django, Python, HTML, CSS and JavaScript. This is a online delivery website designed to display menus to customers & allow them to order food online and have it deliveredd right to their door. This project has been built for educational purposes.
 
 ---
+## UX
 
-Happy coding!
+## Strategy
+Using the core UX principles I first started with Strategy, thinking about the target audience for this online food delivery service & the features they would benefit from.
+
+The target audience for 'Deliver' are:
+- ALL ages starting from 18
+- People that enjoy different varieties of food 
+- People that enjoy eating from the comfort of their home
+
+These users will be looking for:
+- An informative website, with information that is easy-to-find 
+- Up-to-date menus, with essential information such as price and an image of the what the food will look like 
+- A quick and easy website to order food 
+- The ability to make a user account
+- A way to contact the delivery service
+
+
+Due to the age group of the users, it is assumed that most users will be viewing the site on their mobile phones and therefore creating something responsive is integral to the design, I have used Bootstrap grids and elements & custom CSS to allow for this.
+
+## User Stories
+Please find all my defined user stories & their acceptance criteria [here](https://github.com/Ion71229/Milestone-4/issues)
+
+1. As a user I can intuitively navigate through the site so that I can view desired content.
+2. As a user I can get key information about the food delivery service.
+3. As an admin user I can log in to see how much oders have been placed and how much revenue I'm making.
+4. As an admin user I can sign in to add & remove items from the current menus so that I can make sure the website is up to date and accurately reflects what is being served in the restaurant.
+5. As an admin user I can create, remove, update or delete food & drinks items from the database so that I can ensure items are accurate and able to be added to the menu on the website.
+6. As a user I can register or log in so that I can order my food.
+7. As a user I can easily see if I'm logged in or not so that I can choose to log in or log out depending on what I'm doing.
+8. As a user I am prompted to register for an account so that I can create an account and receive the benefits from having a profile.
+9. As a user I can log in so that I can auto-populate forms with my information on the site.
+10. As a user I can view the food & drinks menu's separately so that I can easily find the information I'm looking for.
+11. As a user I can easily find all of the relevant information about the menu items so that I can make informed decisions.
+12. As a user I can find a navigation bar and footer so that I can see what content there is on the website.
+13. As a user I can send a contact form to the delivery service so that I can receive additional information.
+14. As a logged-in customer I can edit/delete food/drinks items I have coosen if I don't want to order.
+15. As a admin I can edit my customer information so that I can make sure their details are up to date for any future communication when making a delivery.
+
+## Scope
+In order to achieve the desired user & business goals, the following features will be included in this release:
+
+- Responsive navbar that will navigate to the various pages throughout the site
+- Landing page with brief information about the restaurant and links to the menu and order page
+- Menus page with starters, mains and dessert and also drinks
+- When placing an order the user can add their details to where they would like the food to be delivered
+- Register/login feature using Django allauth
+
+
+## Structure
+This website has been designed with simplicity in mind, each page only has key information on it so that the user can find what they want quickly without having to read through unnecessary things. I have separated each key feature to highlight its functionality to the user.
+
+The website is made of three apps:
+
+1. Website - core functionality
+2. Menus - menu display
+3. Place an order - for delivery 
+
+### Databases
+
+The menu requires database to store information so I have built 3 custom models. 
+
+### Menus
+MenuItem is the model name for the menus app, this contains both food and drink items. Each item has a name, description and price.
+
+### Place an order
+OrderModel allows users to select what items they would like to order for delivery. Here users can input their details to order food and drink right to their door. Then the order will be submitted and a summary of your order will appear. It will also tell the user to pay with cash on delivery. 
+
+
+
+### Skeleton
+
+![](readme_picture/Screenshot2.png)
+
+
+Please note the actual website differs slightly from the original wireframes. 
+
+The theme of simplicity follows through to the design, I've used bootstrap columns and rows to divide the pages and tried to keep the same layout throughout so that the user has a sense of ease when on the various pages.
+
+### Surface
+Initially, the colour palette I chose for this website was green and white. I wanted a 'clean' feel and based it on greens to keep in theme with Grow, nature plays a huge role in the design of the restaurant and the menu so I wanted there to be consistency. However, whilst building the website I felt the sole use of green made it feel a little flat so I chose to add pink to the colour scheme. This change between pink and green features often, on button hover, in the navbar & footer & menu headings. 
+
+![Colour Palette](assets/images/colour_palete.png)
+
+I chose the fonts 'Lobster' & 'Raleway', I wanted a bold/statement font to use for headings which is why I chose 'Lobster' and then 'Raleway' for the general content as it's easier to read for the user. I have used a class called `brand-text` for most instances of the word Grow and also for the menu and footer headings.
