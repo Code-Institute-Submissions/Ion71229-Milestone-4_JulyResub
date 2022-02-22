@@ -77,16 +77,16 @@ OrderModel allows users to select what items they would like to order for delive
 
 
 ### Skeleton
-
+![](readme_picture/Screenshot1.png)
 ![](readme_picture/Screenshot2.png)
-
+![](readme_picture/Screenshot3.png)
 
 Please note the actual website differs slightly from the original wireframes. 
 
 The theme of simplicity follows through to the design, I've used bootstrap columns and rows to divide the pages and tried to keep the same layout throughout so that the user has a sense of ease when on the various pages.
 
 ### Surface
-Initially, the colour palette I chose for this website was green and white. I wanted a 'clean' feel and based it on greens to keep in theme with Grow, nature plays a huge role in the design of the restaurant and the menu so I wanted there to be consistency. However, whilst building the website I felt the sole use of green made it feel a little flat so I chose to add pink to the colour scheme. This change between pink and green features often, on button hover, in the navbar & footer & menu headings. 
+Initially, the colour palette I chose for this delivery service website was green and white. I wanted a 'clean' feel and based it on greens to keep in theme with Grow, nature plays a huge role in the design of the restaurant and the menu so I wanted there to be consistency. However, whilst building the website I felt the sole use of green made it feel a little flat so I chose to add pink to the colour scheme. This change between pink and green features often, on button hover, in the navbar & footer & menu headings. 
 
 ![Colour Palette](assets/images/colour_palete.png)
 
