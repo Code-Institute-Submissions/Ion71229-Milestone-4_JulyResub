@@ -1,9 +1,10 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
 from django.views import View
 from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
 from customer.models import OrderModel
 from django.utils.timezone import datetime
 
+from .forms import MenuForm
 
 class Dashboard(LoginRequiredMixin, UserPassesTestMixin, View):
     def get(self, request, *args, **kwargs):
@@ -45,4 +46,18 @@ class OrderDetails(LoginRequiredMixin, UserPassesTestMixin, View):
         return render(request, 'restaurant/order-details.html', context)
 
     def test_func(self):
+        return self.request.user.groups.filter(name='Staff').exists()
+
+
+def add_product(request):
+        """ Add a product to the store """
+        form = MenuForm()
+        template = 'restaurant/add_product.html'
+        context = {
+            'form': form,
+        }
+
+        return render(request, template, context)
+
+def test_func(self):
         return self.request.user.groups.filter(name='Staff').exists()

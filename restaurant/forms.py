@@ -5,7 +5,7 @@ from .models import MenuItem, Category
 class MenuForm(forms.ModelForm):
 
     class Meta:
-        model = Menu
+        model = MenuItem
         fields = '__all__'
 
     def __init__(self, *args, **kwargs):
