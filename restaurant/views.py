@@ -4,6 +4,7 @@ from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
 from customer.models import OrderModel
 from django.utils.timezone import datetime
 
+
 class Dashboard(LoginRequiredMixin, UserPassesTestMixin, View):
     def get(self, request, *args, **kwargs):
         today = datetime.today()
