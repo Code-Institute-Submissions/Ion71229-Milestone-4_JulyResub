@@ -2,7 +2,8 @@ from django.shortcuts import render
 from django.views import View
 from django.db.models import Q
 from django.core.mail import send_mail
-from .models import MenuItem, Category, OrderModel
+from restaurant.models import Category, MenuItem, OrderModel
+
 
 class Index(View):
     def get(self, request, *args, **kwargs):
@@ -43,11 +44,11 @@ class Order(View):
         items = request.POST.getlist('items[]')
 
         for item in items:
-            menu_item = MenuItem.objects.get(pk=item)
+            menuitem = MenuItem.objects.get(pk=item)
             item_data = {
-                'id': menu_item.pk,
-                'name': menu_item.name,
-                'price': menu_item.price,
+                'id': menuitem.pk,
+                'name': menuitem.name,
+                'price': menuitem.price,
             }
             order_items['items'].append(item_data)
         
@@ -89,27 +90,3 @@ class Order(View):
 
         return render(request, 'customer/order_confirmation.html', context)
 
-class Menu(View):
-    def get(self, request, *args, **kwargs):
-        menu_items = MenuItem.objects.all()
-
-        context = {
-            'menu_items': menu_items,
-        }
-
-        return render(request, 'customer/menu.html', context)
-
-class MenuSearch(View):
-    def get(self, request, *args, **kwargs):
-        query = self.request.GET.get("q")
-
-        menu_items = MenuItem.objects.filter(
-            Q(name__icontains=query) |
-            Q(price__icontains=query) |
-            Q(description__icontains=query)
-        )
-
-        context = {
-            'menu_items': menu_items
-        }
-        return render(request, 'customer/menu.html', context)

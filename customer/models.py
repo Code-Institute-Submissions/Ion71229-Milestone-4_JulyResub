@@ -1,5 +1,13 @@
 from django.db import models
 
+
+class Category(models.Model):
+    name = models.CharField(max_length=100)
+
+        
+    def __str__(self):
+        return self.name
+
 class MenuItem(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
@@ -7,15 +15,6 @@ class MenuItem(models.Model):
     price = models.DecimalField(max_digits=5, decimal_places=2)
     category = models.ManyToManyField('Category', related_name='item')
 
-    def __str__(self):
-        return self.name
-
-class Category(models.Model):
-    name = models.CharField(max_length=100)
-
-    class Meta:
-        verbose_name_plural = 'Categories'
-        
     def __str__(self):
         return self.name
 

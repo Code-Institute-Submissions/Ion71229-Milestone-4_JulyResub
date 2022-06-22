@@ -2,21 +2,17 @@ from django.db import models
 
 
 class Category(models.Model):
-
-    class Meta:
-        verbose_name_plural = 'Categories'
+    name = models.CharField(max_length=100)
         
-    name = models.CharField(max_length=254)
-
     def __str__(self):
         return self.name
 
 class MenuItem(models.Model):
-    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     name = models.CharField(max_length=100)
     description = models.TextField()
     image = models.ImageField(upload_to='menu_images/')
     price = models.DecimalField(max_digits=5, decimal_places=2)
+    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
 
     def __str__(self):
         return self.name
@@ -37,5 +33,3 @@ class OrderModel(models.Model):
 
     def __str__(self):
         return f'Order: {self.created_on.strftime("%b %d %Y %I: %M %p")}'
-
-
