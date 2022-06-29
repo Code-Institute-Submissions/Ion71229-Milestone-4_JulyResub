@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.views import View
 from django.db.models import Q
 from django.contrib.auth.mixins import UserPassesTestMixin, LoginRequiredMixin
@@ -141,12 +141,32 @@ def add_product(request):
         form = MenuForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            return redirect(reverse('add_product'))
+            return redirect(reverse('menu'))
     else:
         form = MenuForm()
     template = 'restaurant/add_product.html'
     context = {
         'form': form,
+    }
+
+    return render(request, template, context)
+
+
+def edit_product(request, menuitem):
+    """ Edit a product in the store """
+    menuitem = get_object_or_404(MenuItem, pk=menuitem)
+    if request.method == 'POST':
+        form = MenuForm(request.POST, request.FILES, instance=menuitem)
+        if form.is_valid():
+            form.save()
+            return redirect(reverse('menu'))
+    else:
+        form = MenuForm(instance=menuitem)
+
+    template = 'restaurant/edit_product.html'
+    context = {
+        'form': form,
+        'menuitem': menuitem,
     }
 
     return render(request, template, context)
