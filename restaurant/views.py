@@ -123,14 +123,14 @@ class MenuSearch(View):
     def get(self, request, *args, **kwargs):
         query = self.request.GET.get("q")
 
-        menuitems = MenuItem.objects.filter(
+        menuitem = MenuItem.objects.filter(
             Q(name__icontains=query) |
             Q(price__icontains=query) |
             Q(description__icontains=query)
         )
 
         context = {
-            'menuitems': menuitems
+            'menuitem': menuitem,
         }
         return render(request, 'restaurant/menu.html', context)
 
@@ -140,7 +140,7 @@ def add_product(request):
     if request.method == 'POST':
         form = MenuForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
+            menu = form.save()
             return redirect(reverse('menu'))
     else:
         form = MenuForm()
@@ -170,3 +170,10 @@ def edit_product(request, menuitem):
     }
 
     return render(request, template, context)
+
+
+def delete_product(request, menuitem):
+    """ Delete a product from the store """
+    menuitem = get_object_or_404(MenuItem, pk=menuitem)
+    menuitem.delete()
+    return redirect(reverse('menu'))
