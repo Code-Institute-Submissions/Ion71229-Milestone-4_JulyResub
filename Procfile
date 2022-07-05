@@ -1,1 +1,1 @@
-web: gunicorn fooddelivery7.wsgi:application
+web: gunicorn fooddelivery.wsgi:application
