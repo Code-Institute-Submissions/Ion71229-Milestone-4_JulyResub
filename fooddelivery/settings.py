@@ -28,10 +28,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = development
 
-if development:
-    ALLOWED_HOSTS = ['localhost']
-else:
-    ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
+
+ALLOWED_HOSTS = ['https://git.heroku.com/fooddelivery7.git', 'localhost']
+
 
 # Application definition
 
@@ -101,7 +100,7 @@ WSGI_APPLICATION = 'fooddelivery.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-if "DATABASE_URL" in os.environ:
+if 'DATABASE_URL' in os.environ:
     DATABASES = {
        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
         }
