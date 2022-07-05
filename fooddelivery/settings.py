@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['https://git.heroku.com/fooddelivery7.git', 'localhost']
+ALLOWED_HOSTS = ['https://fooddelivery7.herokuapp.com', 'localhost']
 
 
 # Application definition
