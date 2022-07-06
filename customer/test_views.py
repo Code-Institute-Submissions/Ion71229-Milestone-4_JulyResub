@@ -1,6 +1,7 @@
 from django.test import TestCase
 from django.urls import reverse
 
+
 class TestMenusViews(TestCase):
     def setUp(self):
         self.menu_url = reverse('menu')

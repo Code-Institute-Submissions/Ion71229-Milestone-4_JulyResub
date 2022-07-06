@@ -11,7 +11,9 @@ from .forms import MenuForm
 class Dashboard(LoginRequiredMixin, UserPassesTestMixin, View):
     def get(self, request, *args, **kwargs):
         today = datetime.today()
-        orders = OrderModel.objects.filter(created_on__year=today.year, created_on__month=today.month, created_on__day=today.day)
+        orders = OrderModel.objects.filter(created_on__year=today.year,
+                                           created_on__month=today.month,
+                                           created_on__day=today.day)
         total_revenue = 0
 
         unshipped_orders = []
@@ -32,10 +34,12 @@ class Dashboard(LoginRequiredMixin, UserPassesTestMixin, View):
     def test_func(self):
         return self.request.user.groups.filter(name='Staff').exists()
 
+
 class Order(View):
     def get(self, request, *args, **kwargs):
         starters = MenuItem.objects.filter(category__name__contains='Starter')
-        maincourses = MenuItem.objects.filter(category__name__contains='MainCourse')
+        maincourses = MenuItem.objects.filter(
+                                        category__name__contains='MainCourse')
         desserts = MenuItem.objects.filter(category__name__contains='Dessert')
         drinks = MenuItem.objects.filter(category__name__contains='Drinks')
 
@@ -91,6 +95,7 @@ class Order(View):
 
         return render(request, 'customer/order_confirmation.html', context)
 
+
 class OrderDetails(LoginRequiredMixin, UserPassesTestMixin, View):
     def get(self, request, pk, *args, **kwargs):
         order = OrderModel.objects.get(pk=pk)
@@ -109,6 +114,7 @@ class OrderDetails(LoginRequiredMixin, UserPassesTestMixin, View):
     def test_func(self):
         return self.request.user.groups.filter(name='Staff').exists()
 
+
 class Menu(View):
     def get(self, request, *args, **kwargs):
         menuitem = MenuItem.objects.all()
@@ -118,6 +124,7 @@ class Menu(View):
         }
 
         return render(request, 'restaurant/menu.html', context)
+
 
 class MenuSearch(View):
     def get(self, request, *args, **kwargs):

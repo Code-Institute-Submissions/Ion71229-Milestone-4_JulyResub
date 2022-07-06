@@ -3,10 +3,10 @@ from django.db import models
 
 class Category(models.Model):
     name = models.CharField(max_length=100)
-
-        
+    
     def __str__(self):
         return self.name
+
 
 class MenuItem(models.Model):
     name = models.CharField(max_length=100)
@@ -17,6 +17,7 @@ class MenuItem(models.Model):
 
     def __str__(self):
         return self.name
+
 
 class OrderModel(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)

@@ -11,6 +11,7 @@ class MenuItemAdmin(admin.ModelAdmin):
         'price',
     )
 
+
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
         'name',

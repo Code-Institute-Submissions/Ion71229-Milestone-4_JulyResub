@@ -9,14 +9,17 @@ class Index(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'customer/index.html')
 
+
 class About(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'customer/about.html')
 
+
 class Order(View):
     def get(self, request, *args, **kwargs):
         starters = MenuItem.objects.filter(category__name__contains='Starter')
-        maincourses = MenuItem.objects.filter(category__name__contains='MainCourse')
+        maincourses = MenuItem.objects.filter(
+                                        category__name__contains='MainCourse')
         desserts = MenuItem.objects.filter(category__name__contains='Dessert')
         drinks = MenuItem.objects.filter(category__name__contains='Drinks')
 
@@ -71,9 +74,10 @@ class Order(View):
         order.items.add(*item_ids)
 
         # After everything is done, send confirmation email to user
-        body = ('Thank you for your order!  Your food is being made and will be delivered soon!\n'
-        f'Your total: {price}\n'
-        'Thank you again for your order!')
+        body = (
+            'Thank you for your order!Your food is being made and will be delivered soon!\n'
+            f'Your total: {price}\n'
+            'Thank you again for your order!')
 
         send_mail(
             'Thank You For Your Order!',
@@ -89,4 +93,3 @@ class Order(View):
         }
 
         return render(request, 'customer/order_confirmation.html', context)
-
