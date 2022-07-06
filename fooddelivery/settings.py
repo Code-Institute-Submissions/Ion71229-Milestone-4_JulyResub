@@ -163,7 +163,7 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'  # noqa: E501
 CLOUDINARY_STORAGE = {
-     'CLOUDINARY_URL': os.environ.get('CLOUDINARY_URL')
+    'CLOUDINARY_URL': os.environ.get('CLOUDINARY_URL')
 }
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
