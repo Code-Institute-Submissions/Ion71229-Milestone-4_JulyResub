@@ -7,6 +7,17 @@ This is a full-stack framework project built using Django, Python, HTML, CSS and
 
 ---
 ## UX
+- [Strategy](#strategy)
+- [User Stories](#userstories)
+- [Scope](#scope)
+- [Structure](#structure)
+- [Homepage](#home-page)
+- [Technologies Used](#technologies-used)
+- [Testing](#testing)
+- [Bugs and Fixes](bugs-and-fixes)
+- [Deployment](#deployment)
+- [Credits](#credits)
+- [Acknowledgements](#acknowledgements)
 
 ## Strategy
 Using the core UX principles I first started with Strategy, thinking about the target audience for this online food delivery service & the features they would benefit from.
@@ -90,7 +101,7 @@ Initially, the colour palette I chose for this delivery service website was gree
 I chose the fonts Roboto & sans-serif; I wanted a bold/statement font to use for all body to be clear and understanding.
 
 
-### Home page
+## Home page
 
 **Navigation bar**: The navigation bar has links to all the active pages for the user and are clearly labelled, the menu option has Food or Drink menu. The 'about us' tells the user what the website aims to do for comsumers. The Naviation bar is a blue olour and the test is white. On the nav bar consumers can also place an order. When a nav link is hovered on it clearly indicates to the user what they are about to click on. 
 
@@ -100,9 +111,13 @@ The navigation bar is fully responsive and collapses on mobile screens to a hamb
 
 ![](readme_picture/moblieresponsive.png)
 
-**Menu**: The menu allows consumers to browse and pick which food and drink they would like to have to order on the site.
+**Menu**: The menu allows consumers to browse and pick which food and drink they would like to have to order on the site. The owner has the option to edit and delete a product. 
 
 ![](readme_picture/menuitems.png)
+
+**Edit Product**: This allows the owner to update prices, images and description. 
+
+![](readme_picture/edit.png)
 
 **Place an Order**: Consumers can place an order by clicking the place an order on the nav bar. Then it will re-direct to another page where the consumer can choose what they would like to order. After the consumer has choose what they would like to order, the consumer will be able to put in their details and where they would like the food to be delivered to. 
 
@@ -112,17 +127,21 @@ The page is then re-directed and the consumer is given a summary of wht they hav
 
 ![](readme_picture/summaryoforder.png)
 
-**Footer**: The footer displays restaurant login for admin user. 
+**Footer**: The footer displays restaurant login for the owner. 
 
 ![](readme_picture/footer.png)
 
 **Restaurant login**: Available only for the owner of the website to see how much revenue and orders have been placed on the website.
 
-![](readme_picture/websiterevenue.png)
+![](readme_picture/restaurant-login.png)
 
 The admin has full details about the consumer and the admin can marked as shipped when the order is ready for delivery.
 
 ![](readme_picture/shippedorder.png)
+
+**Add Product**: This allows the owner to add a product to the webiste. 
+
+![](readme_picture/add-product.png)
 
 ## Technologies Used
 
@@ -169,10 +188,13 @@ I have used several technologies that have enabled this design to work:
 ---
 
 ## Testing
-I have used manual testing to ensure the website's functionality meets the desired intent.
+
+### Manual Testing
+
+I have tested this project manually myself and have also had it peer-reviewed & tested by friends and family on multiple devices and screen sizes and using differernt browsers. 
 
 ### Code Validation
-All of my code has been validated using an online validator specific to the language, all code now passes with zero errors. 
+Automatic testing of HTML and CSS was checked using W3C Validator ensuring there were no errors or warnings within the code. When the site was ran through the validator there were no errors present.
 
 - [W3C Markup Validation Service](https://validator.w3.org/) 
     - Used to validate all HTML code written and used in this webpage.
@@ -190,11 +212,7 @@ All of my code has been validated using an online validator specific to the lang
 - [Pep8](http://pep8online.com/)
     - Used to test my code for any issues or errors.
 
-### Manual Testing
-
-I have tested this project manually myself and have also had it peer-reviewed & tested by friends and family on multiple devices and screen sizes.
-
-### Bugs and Fixes
+## Bugs and Fixes
 
 - I noticed when deploying the app the first time it worked and after that it won't deploy.
 - Menu item images would not load on 'heroku app'.
@@ -204,7 +222,7 @@ I have tested this project manually myself and have also had it peer-reviewed & 
 
 The main branch of this repository has been used for the deployed version of this application.
 
-## Using Github & Gitpod
+### Using Github & Gitpod
 
 - To deploy my command-line interface application, I had to use the [Code Institute Python Essentials Template](https://github.com/Code-Institute-Org/python-essentials-template), as this enables the application to be properly viewed on Heroku using a mock terminal. 
 
@@ -244,7 +262,7 @@ The main branch of this repository has been used for the deployed version of thi
     - Link Heroku app to your github and search for the repository.
     - Click on deploy to build the app.
 
-    ## Credits
+## Credits
 
 Throughout the process of building this website, I have used various sources online to help me fix bugs & tackle problems, in addition to various modules to build the functionality of this website:
 
@@ -263,5 +281,5 @@ Throughout the process of building this website, I have used various sources onl
 [Testing](https://www.youtube.com/watch?v=0MrgsYswT1c)
 
 
-# Acknowledgements
+## Acknowledgements
 - I would like to thank my mentor Adegbenga Adeye and the slack community for their great advice, tips and the code review.
