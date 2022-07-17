@@ -6,9 +6,9 @@
 This is a full-stack framework project built using Django, Python, HTML, CSS and JavaScript. This is a online delivery website designed to display menus to customers & allow them to order food online and have it deliveredd right to their door. This project has been built for educational purposes.
 
 ---
-## UX
+# Table of Contents:
 - [Strategy](#strategy)
-- [User Stories](#userstories)
+- [UX](#ux)
 - [Scope](#scope)
 - [Structure](#structure)
 - [Homepage](#home-page)
@@ -36,6 +36,8 @@ These users will be looking for:
 
 
 Due to the age group of the users, it is assumed that most users will be viewing the site on their mobile phones and therefore creating something responsive is integral to the design, I have used Bootstrap grids and elements & custom CSS to allow for this.
+
+# UX
 
 ## User Stories
 Please find all my defined user stories & their acceptance criteria [here](https://github.com/Ion71229/Milestone-4/issues)
@@ -193,18 +195,32 @@ I have used several technologies that have enabled this design to work:
 
 I have tested this project manually myself and have also had it peer-reviewed & tested by friends and family on multiple devices and screen sizes and using differernt browsers. 
 
+Attached below is a screenshot of the site's lighthouse report at the deployment stage of my project:
+
+<details>
+    <summary>Lighthouse Report - Click Here:</summary>
+    <img src="readme_picture/perfomance.png" width="700">
+</details>
+
+
 ### Code Validation
 Automatic testing of HTML and CSS was checked using W3C Validator ensuring there were no errors or warnings within the code. When the site was ran through the validator there were no errors present.
 
 - [W3C Markup Validation Service](https://validator.w3.org/) 
     - Used to validate all HTML code written and used in this webpage.
 
-![](readme_picture/htmlchecker.png)
+<details>
+    <summary>HTML Checker - Click Here:</summary>
+    <img src="readme_picture/htmlchecker.png" width="700">
+</details>
 
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input)
     - Used to validate all CSS code written and used in this webpage.
 
-![](readme_picture/cssvalidator.png)
+<details>
+    <summary>CSS Checker - Click Here:</summary>
+    <img src="readme_picture/cssvalidator.png" width="700">
+</details>
 
 - [JSHint](https://jshint.com/)
     - Used to validate JS code
